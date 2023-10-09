@@ -23,6 +23,9 @@ Setup client
     // setup client
     $client = new Client($clientId, $clientSecret, $redirectRuName, $sandbox);
     
+    // set content language
+    $client->setContentLanguage('en-US');
+    
     // setup token update callback
     $client->setTokenUpdateCallback(function(Token $token) {
         
@@ -64,4 +67,5 @@ Setup client
 Endpoint Examples
 =================
 
-* `Inventory <inventory.rst>`_
+* `Inventory Item <inventory_item.rst>`_
+* `Inventory Item Group <inventory_item_group.rst>`_

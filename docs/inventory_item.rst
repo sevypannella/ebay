@@ -1,18 +1,18 @@
 .. _top:
-.. title:: Inventory
+.. title:: Inventory Items
 
 `Back to index <index.rst>`_
 
-=========
-Inventory
-=========
+===============
+Inventory Items
+===============
 
 .. contents::
     :local:
 
 
-List Inventory
-``````````````
+List Inventory Items
+````````````````````
 
 .. code-block:: php
     
@@ -196,7 +196,6 @@ Replace Or create
 .. code-block:: php
     
     $sku = 'G********1';
-    $client->setContentLanguage('en-US');
     $client->inventory->replaceOrCreate($sku, [
         'availability' => [
             'shipToLocationAvailability' => [
@@ -243,7 +242,6 @@ Product Compatibility
 .. code-block:: php
     
     $sku = 'G********1';
-    $client->setContentLanguage('en-US');
     $client->inventory->productCompatibility($sku, [
         'compatibleProducts' => [
             [

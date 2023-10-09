@@ -3,9 +3,9 @@
 namespace Onetoweb\Ebay\Endpoint;
 
 /**
- * Inventory Endpoint
+ * InventoryItem Endpoint
  */
-class Inventory extends EndpointAbstract
+class InventoryItem extends EndpointAbstract
 {
     /**
      * Base path

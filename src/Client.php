@@ -78,7 +78,9 @@ class Client
      */
     private function loadEndpoints(): void
     {
-        $this->inventory = new Endpoint\Inventory($this);
+        $this->inventoryItem = new Endpoint\InventoryItem($this);
+        $this->inventoryItemGroup = new Endpoint\InventoryItemGroup($this);
+        
     }
     
     /**
