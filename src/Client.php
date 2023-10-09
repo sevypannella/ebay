@@ -314,24 +314,8 @@ class Client
         // get url
         $url = $this->getBaseUrl() . $endpoint;
         
-        
-        // DEV - DEV - DEV
-        dump([
-            'method' => $method,
-            'url' => $url,
-            'options' => $options
-        ]);
-        // DEV - DEV - DEV
-        
-        
         // request
         $response = (new GuzzleCLient())->request($method, $url, $options);
-        
-        
-        // DEV - DEV - DEV
-        dump($response);
-        // DEV - DEV - DEV
-        
         
         // get contents
         $contents = $response->getBody()->getContents();
