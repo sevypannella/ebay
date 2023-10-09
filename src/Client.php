@@ -80,7 +80,7 @@ class Client
     {
         $this->inventoryItem = new Endpoint\InventoryItem($this);
         $this->inventoryItemGroup = new Endpoint\InventoryItemGroup($this);
-        
+        $this->listing = new Endpoint\Listing($this);
     }
     
     /**
