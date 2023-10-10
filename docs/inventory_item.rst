@@ -16,7 +16,7 @@ List Inventory Items
 
 .. code-block:: php
     
-    $result = $client->inventory->list([
+    $result = $client->inventoryItem->list([
         'limit' => 10,
         'offset' => 0,
     ]);
@@ -27,7 +27,7 @@ Create Inventory In Bulk
 
 .. code-block:: php
     
-    $result = $client->inventory->bulkCreateOrReplace( [
+    $result = $client->inventoryItem->bulkCreateOrReplace( [
         'requests' => [
             [
                 'sku' => 'B********s',
@@ -102,7 +102,7 @@ Get Inventory Item
 .. code-block:: php
     
     $sku = 'B********s';
-    $result = $client->inventory->get($sku);
+    $result = $client->inventoryItem->get($sku);
 
 
 Delete Inventory Item
@@ -111,7 +111,7 @@ Delete Inventory Item
 .. code-block:: php
     
     $sku = 'B********s';
-    $client->inventory->delete($sku);
+    $client->inventoryItem->delete($sku);
 
 
 Bulk Get Inventory Items
@@ -119,7 +119,7 @@ Bulk Get Inventory Items
 
 .. code-block:: php
     
-    $result = $client->inventory->bulkGetItems([
+    $result = $client->inventoryItem->bulkGetItems([
         'requests' => [
             [
                 'sku' => 'B********s'
@@ -136,7 +136,7 @@ Bulk Update Price Quantity
 
 .. code-block:: php
     
-    $result = $client->inventory->bulkUpdatePriceQuantity([
+    $result = $client->inventoryItem->bulkUpdatePriceQuantity([
         'requests' => [
             [
                 'offers' => [
@@ -196,7 +196,7 @@ Replace Or create
 .. code-block:: php
     
     $sku = 'G********1';
-    $client->inventory->replaceOrCreate($sku, [
+    $client->inventoryItem->replaceOrCreate($sku, [
         'availability' => [
             'shipToLocationAvailability' => [
                 'quantity' => 50
@@ -242,7 +242,7 @@ Product Compatibility
 .. code-block:: php
     
     $sku = 'G********1';
-    $client->inventory->productCompatibility($sku, [
+    $client->inventoryItem->productCompatibility($sku, [
         'compatibleProducts' => [
             [
                 'productFamilyProperties' => [
