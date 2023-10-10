@@ -3,7 +3,7 @@
 namespace Onetoweb\Ebay\Endpoint;
 
 /**
- * InventoryItem Endpoint
+ * Listing Endpoint
  */
 class Listing extends EndpointAbstract
 {
