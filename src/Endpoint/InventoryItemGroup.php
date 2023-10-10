@@ -23,7 +23,7 @@ class InventoryItemGroup extends EndpointAbstract
     /**
      * @param string $inventoryItemGroupKey
      */
-    public function get(string $inventoryItemGroupKey): array
+    public function get(string $inventoryItemGroupKey)
     {
         return $this->client->request($this->client::METHOD_GET, self::BASE_PATH . "/inventory_item_group/$inventoryItemGroupKey");
     }

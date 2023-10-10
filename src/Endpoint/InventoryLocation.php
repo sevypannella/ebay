@@ -14,20 +14,16 @@ class InventoryLocation extends EndpointAbstract
     
     /**
      * @param array $query = []
-     * 
-     * @return array
      */
-    public function list(array $query = []): array
+    public function list(array $query = [])
     {
         return $this->client->request($this->client::METHOD_GET, self::BASE_PATH . '/location', $query);
     }
     
     /**
      * @param string $merchantLocationKey
-     * 
-     * @return array
      */
-    public function get(string $merchantLocationKey): array
+    public function get(string $merchantLocationKey)
     {
         return $this->client->request($this->client::METHOD_GET, self::BASE_PATH . "/location/$merchantLocationKey");
     }

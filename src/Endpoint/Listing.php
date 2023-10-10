@@ -15,7 +15,7 @@ class Listing extends EndpointAbstract
     /**
      * @param array $data
      */
-    public function bulkMigrate(array $data): array
+    public function bulkMigrate(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH, [], $data);
     }

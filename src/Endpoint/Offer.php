@@ -14,20 +14,16 @@ class Offer extends EndpointAbstract
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function create(array $data): array
+    public function create(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/offer', [], $data);
     }
     
     /**
      * @param string $offerId
-     * 
-     * @return array
      */
-    public function get(string $offerId): array
+    public function get(string $offerId)
     {
         return $this->client->request($this->client::METHOD_GET, self::BASE_PATH . "/offer/$offerId");
     }
@@ -43,90 +39,72 @@ class Offer extends EndpointAbstract
     
     /**
      * @param string $offerId
-     * 
-     * @return array
      */
-    public function delete(string $offerId): array
+    public function delete(string $offerId)
     {
         return $this->client->request($this->client::METHOD_DELETE, self::BASE_PATH . "/offer/$offerId");
     }
     
     /**
      * @param string $offerId
-     * 
-     * @return array
      */
-    public function publish(string $offerId): array
+    public function publish(string $offerId)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . "/offer/$offerId/publish");
     }
     
     /**
      * @param string $offerId
-     * 
-     * @return array
      */
-    public function withdraw(string $offerId): array
+    public function withdraw(string $offerId)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . "/offer/$offerId/withdraw");
     }
     
     /**
      * @param array $query = []
-     * 
-     * @return array
      */
-    public function list(array $query = []): array
+    public function list(array $query = [])
     {
         return $this->client->request($this->client::METHOD_GET, self::BASE_PATH . '/offer', $query);
     }
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function getListingFees(array $data): array
+    public function getListingFees(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/offer/get_listing_fees', [], $data);
     }
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function bulkCreate(array $data): array
+    public function bulkCreate(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/bulk_create_offer', [], $data);
     }
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function bulkPublish(array $data): array
+    public function bulkPublish(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/bulk_publish_offer', [], $data);
     }
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function publishByInventoryItemGroup(array $data): array
+    public function publishByInventoryItemGroup(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/offer/publish_by_inventory_item_group', [], $data);
     }
     
     /**
      * @param array $data
-     * 
-     * @return array
      */
-    public function withdrawByInventoryItemGroup(array $data): array
+    public function withdrawByInventoryItemGroup(array $data)
     {
         return $this->client->request($this->client::METHOD_POST, self::BASE_PATH . '/offer/withdraw_by_inventory_item_group', [], $data);
     }
