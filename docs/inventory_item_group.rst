@@ -11,8 +11,8 @@ Inventory Item Group
     :local:
 
 
-Create Or Replace
-`````````````````
+Create Or Replace Inventory Item Group
+``````````````````````````````````````
 
 .. code-block:: php
     
@@ -63,8 +63,8 @@ Create Or Replace
     ]);
 
 
-Get
-```
+Get Inventory Item Group
+````````````````````````
 
 .. code-block:: php
     
@@ -72,8 +72,8 @@ Get
     $result = $client->inventoryItemGroup->get($inventoryItemGroupKey);
 
 
-Delete
-``````
+Delete Inventory Item Group
+```````````````````````````
 
 .. code-block:: php
     

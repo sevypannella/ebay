@@ -22,12 +22,12 @@ List Inventory Items
     ]);
 
 
-Create Inventory In Bulk
-````````````````````````
+Create Or Replace Inventory Items In Bulk
+`````````````````````````````````````````
 
 .. code-block:: php
     
-    $result = $client->inventoryItem->bulkCreateOrReplace( [
+    $result = $client->inventoryItem->bulkCreateOrReplace([
         'requests' => [
             [
                 'sku' => 'B********s',

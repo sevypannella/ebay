@@ -125,8 +125,8 @@ Get Listing Fees
     ]);
 
 
-Bulk Create
-```````````
+Bulk Create Offers
+``````````````````
 
 .. code-block:: php
     
@@ -236,8 +236,8 @@ Bulk Create
     ]);
 
 
-Bulk Publish
-````````````
+Bulk Publish Offers
+```````````````````
 
 .. code-block:: php
     
@@ -248,8 +248,8 @@ Bulk Publish
     ]);
 
 
-Publish By Inventory Item Group
-```````````````````````````````
+Publish Offers By Inventory Item Group
+``````````````````````````````````````
 
 .. code-block:: php
     
@@ -259,8 +259,8 @@ Publish By Inventory Item Group
     ]);
 
 
-Withdraw By Inventory Item Group
-````````````````````````````````
+Withdraw Offers By Inventory Item Group
+```````````````````````````````````````
 
 .. code-block:: php
     
