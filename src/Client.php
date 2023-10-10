@@ -82,6 +82,7 @@ class Client
         $this->inventoryItemGroup = new Endpoint\InventoryItemGroup($this);
         $this->listing = new Endpoint\Listing($this);
         $this->offer = new Endpoint\Offer($this);
+        $this->inventoryLocation = new Endpoint\InventoryLocation($this);
     }
     
     /**

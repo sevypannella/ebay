@@ -71,3 +71,4 @@ Endpoint Examples
 * `Inventory Item Group <inventory_item_group.rst>`_
 * `Listing <listing.rst>`_
 * `Offer <offer.rst>`_
+* `Inventory Location <inventory_location.rst>`_
